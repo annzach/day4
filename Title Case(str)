@@ -1,0 +1,17 @@
+/* write a program such that the o/p will be
+
+str ="hello world -- >Hello World
+str ="hI ReeNa -->Hi Reena
+The first character of each string should be in CAPS and the remaining be in lowercase Letters
+
+*/
+
+
+var str = "hello world";
+var arr =str.split(" ");
+var output =arr.map(changeFormat);
+console.log(output.join(" "));
+
+function changeFormat(f){
+return f[0].toUpperCase()+ f.slice(1).toLowerCase();
+}
